@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="css/styling.css">
+</head>
+<body>
+
+  <div class="header">
+    <img src="images/logo.png" alt="Logo" class="logo">
+    <h1>Welcome to Jb Bikers</h1>
+  </div>
+
+  <nav>
+    <a href="cart.html">Cart |</a>
+    <a href="signup.html">Login/ Register</a>
+    <hr>
+  </nav>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="aboutUs.html">About Us</a>
+    <a href="contact.html">Contact us</a>
+    <a href="products.html">Products</a>
+  </nav>
+
+  <!-- Sign-up Form -->
+  <form id="signupForm" novalidate>
+    <h2>Create Your Account</h2>
+
+    <label for="name">Full Name:</label>
+    <input type="text" id="name" placeholder="Enter your full name" required>
+    <small class="error-text" id="nameError"></small>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" placeholder="Enter your email" required>
+    <small class="error-text" id="emailError"></small>
+
+    <label for="phone">Phone Number:</label>
+    <input type="text" id="phone" placeholder="e.g. 0834567890" required>
+    <small class="error-text" id="phoneError"></small>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" placeholder="Enter your password" required>
+    <small class="error-text" id="passwordError"></small>
+
+    <input type="submit" value="Sign Up">
+    <p id="errorMessage" style="color:red; text-align:center;"></p>
+    <p id="successMessage" style="color:green; text-align:center;"></p>
+  </form>
+
+  <footer>
+    <p>&copy; 2025 JB Bikers</p>
+  </footer>
+
+  <!-- External JavaScript -->
+  <script src="javascript/java.js"></script>
+</body>
+</html>

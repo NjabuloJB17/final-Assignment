@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home </title>
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="css/styling.css">
+
+  <!-- Leaflet Map Library -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+
+<body>
+  <div class="header">
+    <img src="images/logo.png" alt="Logo" class="logo">
+    <h1>Welcome to JB Bikers</h1>
+  </div>
+
+  <nav>
+    <a href="cart.html">Cart |</a>
+    <a href="signup.html">Login / Register</a>
+    <hr>
+  </nav>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="aboutUs.html">About Us</a>
+    <a href="contact.html">Contact Us</a>
+    <a href="products.html">Products</a>
+  </nav>
+
+  <div class="container">
+    <p>
+      JB Bikers is a startup eCommerce store that sells bikes for everyone — young, old, and professionals who enjoy riding and staying fit.
+    </p>
+
+    <h2>Fun Facts About Cycling</h2>
+    <p>
+      Bicycles were once called "velocipedes". BMX bikes were inspired by motorbike racing, and cycling as a sport is over 150 years old.
+    </p>
+
+    <h2>Our Mission</h2>
+    <p>At JB Bikers, our mission is to make cycling accessible, affordable, and enjoyable for everyone.</p>
+
+    <h2>Our Products</h2>
+    <p>
+      - Mountain Bikes<br>
+      - Road Bikes<br>
+      - Kids’ Bikes<br>
+      - Accessories & Gear
+    </p>
+
+    <h2>Why Choose JB Bikers?</h2>
+    <p>
+      - High-quality bikes<br>
+      - Expert guidance<br>
+      - Affordable prices<br>
+      - Great after-sales support
+    </p>
+
+    <!-- Accordion -->
+    <h2>Frequently Asked Questions</h2>
+    <div class="accordion">
+      <div class="accordion-item">
+        <button class="accordion-header">Do you offer bike maintenance?</button>
+        <div class="accordion-content">
+          <p>Yes! We provide maintenance and tune-ups for all bikes purchased from us.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-header">Do you deliver nationwide?</button>
+        <div class="accordion-content">
+          <p>Yes, we deliver across South Africa with free shipping on orders over R5000.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <h2>Stay Connected</h2>
+    <button id="openModalBtn">Join Our Newsletter</button>
+    <div id="newsletterModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Subscribe to Our Newsletter</h2>
+        <p>Get updates on new bikes and exclusive discounts!</p>
+        <input type="email" placeholder="Enter your email">
+        <button>Subscribe</button>
+      </div>
+    </div>
+
+    
+
+    
+  <h2>JB Bikes Gallery</h2>
+
+<div class="gallery">
+  <img src="images/bmx.jpg" alt="BMX Bike">
+  <img src="images/BigTire.jpg" alt="BigTire Bike">
+  <img src="images/images4.jpg" alt="Kids Bike">
+  <img src="images/MountainBike.jpg" alt="Mountain Bike">
+  
+</div>
+
+<div id="lightbox" style="display:none;">
+  <span class="close-lightbox">&times;</span>
+  <img id="lightbox-img" src="" alt="Preview">
+</div>
+
+    <!-- Map -->
+    <h2>Find Us</h2>
+   <iframe
+    src="https://www.google.com/maps?q=460 teak street ,+Johannesburg,+South+Africa&output=embed&z=15"
+    
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+
+  <hr>
+  <footer>
+    <p>&copy; 2025 JB Bikers Website</p>
+  </footer>
+
+  <!-- JS Libraries and External Script -->
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="javascript/java.js"></script>
+</body>
+</html>
